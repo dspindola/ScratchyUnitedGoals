@@ -1,0 +1,29 @@
+{
+  "name": "scratchyunitedgoals",
+  "module": "src/index.ts",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --watch ./server.tsx"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@elysiajs/cors": "^1.0.2",
+    "@elysiajs/eden": "^1.0.14",
+    "@elysiajs/html": "^1.0.2",
+    "@elysiajs/static": "^1.0.3",
+    "@elysiajs/stream": "^1.0.3",
+    "@elysiajs/websocket": "^0.2.8",
+    "@kitajs/ts-html-plugin": "^4.0.1",
+    "@replit/database": "^3.0.1",
+    "@replit/object-storage": "^1.0.0",
+    "bun": "^1.1.18",
+    "elysia": "^1.0.27",
+    "logixlysia": "^3.4.0"
+  }
+}

@@ -1,0 +1,25 @@
+run = "bun run dev"
+entrypoint = "./server.tsx"
+
+modules = ["web", "bash"]
+
+[nix]
+channel = "stable-24_05"
+
+[env]
+PATH = "/home/runner/$REPL_SLUG/.config/npm/node_global/bin:/home/runner/$REPL_SLUG/.config/.bun/bin"
+npm_config_prefix = "/home/runner/$REPL_SLUG/.config/npm/node_global"
+XDG_CONFIG_HOME = "/home/runner/$REPL_SLUG/.config"
+BUN_INSTALL = "/home/runner/$REPL_SLUG/.config/.bun"
+
+[packager]
+language = "bun"
+
+[packager.features]
+guessImports = true
+packageSearch = true
+enabledForHosting = false
+
+[[ports]]
+localPort = 8080
+externalPort = 80
